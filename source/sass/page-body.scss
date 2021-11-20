@@ -1,0 +1,9 @@
+.page-body {
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  max-width: 100%;
+  overflow-x: hidden;
+}
