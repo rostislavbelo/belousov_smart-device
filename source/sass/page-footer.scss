@@ -1,3 +1,149 @@
-.about {
+.page-footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page-footer__main-area {
+  max-width: 1464px;
+  margin: 0 auto 50px;
+  padding: 0 25px 8px 72px;
+  display: grid;
+  grid-template-columns: 29% 42% 1fr;
+}
+
+.page-footer__logo-area {
+  padding: 0;
+  margin: 0 0 53px 0px;
+  width: 100%;
+  // grid-area: logo;
+}
+
+.page-footer__logo-content {
+  display: flex;
+  justify-content: space-between;
+  width: 216px;
+  height: 52px;
+}
+
+.page-footer__logo-img {
+  width: 52px;
+  height: 52px;
+}
+
+.page-footer__logo-text {
+  padding: 7px 0 0 0;
+}
+
+.page-footer__logo-text p {
+  color: #203C42;
+}
+
+.page-footer__logo-area-since {
+  display: none;
+}
+
+.page-footer__social-list {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 0 -16px;
+}
+
+.page-footer__social-item {
+  margin: 0 0 0 16px;
+}
+
+.page-footer__promo {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__sections-site {
+  padding: 0;
   margin: 0;
 }
+
+.page-footer__address h6,
+.page-footer__sections-site h6 {
+  padding: 0;
+  margin: 0 0 26px 0;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+}
+
+.page-footer__sections-site-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+}
+
+.page-footer__address-link,
+.page-footer__sections-site-link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.page-footer__address {
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+
+.page-footer__address-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer__copyright {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0 0;
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+.page-footer__copyright-list {
+  max-width: 1464px;
+  list-style-type: none;
+  padding: 14px 0 14px 49px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 15.3% 25.6% 42.5% 1fr;
+}
+
+.page-footer__copyright-item span {
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+/* .page-footer__copyright-item:nth-child(4n) {
+  display: flex;
+  justify-content: flex-end;
+}
+ */

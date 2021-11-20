@@ -17,12 +17,12 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__logo-area">
-        <a class="page-header__logo-content">
-          <svg class="page-header__logo-img" width="52" height="52" aria-label="Логотип Smart Device">
+      <div class="page-header__logo-area logo-area">
+        <a class="page-header__logo-content logo-area__content">
+          <svg class="page-header__logo-img logo-area__img" width="52" height="52" aria-label="Логотип Smart Device">
             <use xlink:href="img/icons/sprite.svg#logo"></use>
           </svg>
-          <div class="page-header__logo-text">
+          <div class="page-header__logo-text logo-area__text">
             <p>Smart Device</p>
             <p>умные технологии</p>
           </div>
@@ -51,7 +51,7 @@
           <button class="page-header__button button">Заказать звонок</button>
         </li>
       </ul>
-      <section class="page-header__main-info main-info">
+      <section class="page-header__main-info main-info" id="main-info">
         <div class="main-info__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -110,13 +110,112 @@
       <p>Остались вопросы? Задайте их нам!</p>
       <p>Мы проконсультируем Вас бесплатно</p>
       <form action="">
-
       </form>
-
     </section>
   </main>
   <footer class="page-footer">
+    <div class="page-footer__main-area">
+      <div class="page-footer__promo">
+        <div class="page-footer__logo-area logo-area">
+          <a class="page-footer__logo-content logo-area__content">
+            <svg class="page-footer__logo-img logo-area__img" width="52" height="52" aria-label="Логотип Smart Device">
+              <use xlink:href="img/icons/sprite.svg#logo"></use>
+            </svg>
+            <div class="page-footer__logo-text logo-area__text">
+              <p>Service Device</p>
+              <p>умные технологии</p>
+            </div>
+        </a></div>
+        <div class="page-footer__logo-area-since">
+          <p>1999-2018 SD Service Devices</p>
+        </div>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="https://www.facebook.com/" aria-label="Смартдевайс на Фейсбуке">
+              <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Фэйсбук">
+                <use xlink:href="img/icons/sprite.svg#logo-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="https://www.ok.ru/" aria-label="Смартдевайс в Одноклассниках">
+              <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Одноклассники">
+                <use xlink:href="img/icons/sprite.svg#logo-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="https://www.vk.com/" aria-label="Смартдевайс Вконтакте">
+              <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Вконтакте">
+                <use xlink:href="img/icons/sprite.svg#logo-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="page-footer__sections-site">
+        <h6>Разделы сайта</h6>
+        <ul class="page-footer__sections-site-list">
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">О компании</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Продукты</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Производство печатных плат</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Монтаж печатных плат</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Комплектующие</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Доставка</a>
+          </li>
+          <li class="page-footer__sections-site-item">
+            <a class="page-footer__sections-site-link" href="#main-info">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__address">
+        <h6>Наш офис</h6>
+        <ul class="page-footer__address-list">
+          <li class="page-footer__address-item">
+            <a class="page-footer__address-link" href="https://goo.gl/maps/zPC633ayE2vYEtCW8">г. Мытищи, Олимпийский
+              проспект, д.10</a>
+          </li>
+          <li class="page-footer__address-item">
+            <a class="page-footer__address-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+          </li>
+          <li class="page-footer__address-item">
+            <a class="page-footer__address-link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+          </li>
+          <li class="page-footer__address-item">
+            <a class="page-footer__address-link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-footer__copyright">
+      <ul class="page-footer__copyright-list">
+        <li class="page-footer__copyright-item">
+          <span>Все права защищены</span>
+        </li>
+        <li class="page-footer__copyright-item">
+          <span>1999-2018 SD Service Devices</span>
+        </li>
+        <li class="page-footer__copyright-item">
+          <span>Условия конфиденциальности</span>
+        </li>
+        <li class="page-footer__copyright-item">
+          <span>Developed by wow studio</span>
+        </li>
+      </ul>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

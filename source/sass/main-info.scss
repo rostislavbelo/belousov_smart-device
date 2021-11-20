@@ -25,7 +25,6 @@
   color: #FFFFFF;
   max-width: 750px;
 
-
   @media (max-width: 1200px) {
     max-width: 650px;
   }
@@ -60,7 +59,6 @@
   left: 2px;
 }
 
-
 .main-info__button {
   margin: 0 0 0 97px;
   width: 407px;
@@ -83,7 +81,6 @@
 .main-info__button span:last-child {
   display: none;
 }
-
 
 @media (max-width: $desktop-width) {
 
@@ -204,7 +201,7 @@
     margin: 0 0 0 0;
     width: unset;
     min-width: 287px;
-    //max-width: 300px;
+    max-width: 300px;
     height: 55px;
     background: #00B2FF;
     border-radius: 5px;
