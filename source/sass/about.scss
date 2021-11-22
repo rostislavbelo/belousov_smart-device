@@ -1,7 +1,7 @@
 .about {
   max-width: 100%;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 108px;
   /*   display: flex;
   justify-content: flex-end;
   position: relative; */
@@ -79,8 +79,8 @@
 @media (max-width: $desktop-width) {
   .about {
     max-width: 100%;
-    padding: 0;
-    margin: 0 auto;
+    padding: 0 0 20px 0;
+    margin: 0 auto 62px;
     /*   display: flex;
     justify-content: flex-end;
     position: relative; */
@@ -168,8 +168,8 @@
 @media (max-width: $tablet-width) {
   .about {
     max-width: 100%;
-    padding: 0;
-    margin: 0 15px;
+    padding: 0 0 20px 0;
+    margin: 0 15px 45px 15px;
     /*   display: flex;
     justify-content: flex-end;
     position: relative; */
@@ -193,7 +193,7 @@
   .about__list {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 7px 0;
+    margin: 0 0 8px 0;
   }
 
   .about__item {

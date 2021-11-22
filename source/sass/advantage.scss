@@ -1,6 +1,6 @@
 .advantage {
   padding: 0;
-  margin: 0 0 77px 0;
+  margin: 0 0 77px;
   width: 100%;
   position: relative;
 }
@@ -232,7 +232,7 @@
 @media (max-width: $tablet-width) {
   .advantage {
     padding: 0;
-    margin: 0 0 36px 0;
+    margin: 0 0 35px 0;
     width: 100%;
     position: relative;
   }
@@ -284,7 +284,7 @@
     border-width: 2px 2px 2px 3px;
     box-sizing: border-box;
     margin: 0 15px 19px;
-    padding: 24px 15px 26px 22px;
+    padding: 24px 16px 26px 22px;
     background: #ffffff;
 
     @media (min-width: 767px) and (max-width: 1024px) {
