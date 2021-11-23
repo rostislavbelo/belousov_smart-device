@@ -76,6 +76,10 @@
   text-decoration: none;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    @include hover2;
+  }
 }
 
 .main-info__button span:last-child {

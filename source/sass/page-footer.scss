@@ -66,6 +66,18 @@
   margin: 0 0 0 16px;
 }
 
+.page-footer__social-img {
+  fill: #CDCDCD;
+
+  &:hover {
+    fill: #00B2FF;
+  }
+
+  &:active {
+    fill: rgba(0, 178, 255, 0.5);
+  }
+}
+
 .page-footer__promo {
   display: flex;
   flex-direction: column;
@@ -148,6 +160,14 @@
 
   @media (min-width: 1023px) and (max-width: 1320px) {
     letter-spacing: -0.1em;
+  }
+
+  &:hover {
+    @include hover3;
+  }
+
+  &:focus {
+    opacity: 0.9;
   }
 }
 
@@ -400,7 +420,6 @@
   }
 }
 
-//__________________________________________________________________________________________________
 @media (max-width: $tablet-width) {
   .page-footer {
     margin: 0;

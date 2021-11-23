@@ -1,3 +1,159 @@
-.input {
+.input input,
+.input textarea {
   margin: 0;
+  padding: 9px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 269px;
+  height: 50px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::placeholder {
+    font-family: "PT Mono";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.input textarea {
+  height: unset;
+  width: 100%;
+  max-height: 154px;
+  box-sizing: border-box;
+}
+
+/* .input label {
+  width: 35%;
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  display: block;
+} */
+
+.input__checkbox input {
+  @include hidden;
+}
+
+.input__checkbox label {
+  position: relative;
+  padding: 8px 0 0 71px;
+  margin: 0;
+  cursor: pointer;
+  width: 35%;
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  display: block;
+
+  &::before {
+    @include pseudo;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    left: 38px;
+    top: 8px;
+  }
+
+  &::after {
+    @include pseudo;
+    width: 7px;
+    height: 4px;
+    border-radius: 0;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    top: 12px;
+    left: 42px;
+    display: none;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover::before {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.input__checkbox input:checked+label::after {
+  display: block;
+}
+
+@media (max-width: $desktop-width) {
+
+  .input textarea {
+    height: unset;
+    width: 100%;
+    max-height: 159px;
+    box-sizing: border-box;
+  }
+
+  .input__checkbox label {
+    padding: 8px 0 0 75px;
+  }
+
+
+  .input__checkbox label {
+    &::before {
+      left: 41px;
+      top: 9px;
+    }
+
+    &::after {
+      top: 13px;
+      left: 46px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+  .input textarea {
+    max-height: 106px;
+  }
+
+  .input input,
+  .input textarea {
+    padding: 12px 18px;
+  }
+
+  .input__checkbox label {
+    padding: 8px 0 0 34px;
+  }
+
+  .input__checkbox label::before {
+    left: 0px;
+    top: 9px;
+  }
+
+  .input__checkbox label::after {
+    top: 13px;
+    left: 4px;
+  }
 }

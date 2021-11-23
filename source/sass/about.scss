@@ -74,6 +74,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00B2FF;
+
+  &:hover {
+    @include hover1;
+  }
 }
 
 @media (max-width: $desktop-width) {

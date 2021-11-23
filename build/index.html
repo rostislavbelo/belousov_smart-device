@@ -48,14 +48,14 @@
       </ul>
       <ul class="page-header__button-list">
         <li class="page-header__button-item">
-          <button class="page-header__button button">Заказать звонок</button>
+          <a class="page-header__button button" href="#popup">Заказать звонок</a>
         </li>
       </ul>
       <section class="page-header__main-info main-info" id="main-info">
         <div class="main-info__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-info__button button" href="#feedback">
+          <a class="main-info__button button" href="#questions">
             <span>Получить бесплатную консультацию</span>
             <span>Бесплатная консультация</span>
           </a>
@@ -149,12 +149,41 @@
         </ul>
       </div>
     </section>
-    <section class="questions-form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Остались вопросы? Задайте их нам!</p>
-      <p>Мы проконсультируем Вас бесплатно</p>
-      <form action="">
-      </form>
+    <section class="questions-form" id="questions">
+      <div class="questions-form__wrapper">
+
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+
+        <form class="questions-form__main input" action="https://echo.htmlacademy.ru" method="post">
+          <span>Остались вопросы? Задайте их нам!</span>
+          <span>Мы проконсультируем Вас бесплатно</span>
+          <ul class="questions-form__list input__list">
+            <li class="questions-form__item questions-form__name input__item">
+              <input type="text" name="name" id="name" placeholder="Имя" required="" minlength="2" maxlength="50" title="Ваше имя или никнейм">
+              <label class="visually-hidden" for="name">Поле ввода имени</label>
+            </li>
+
+            <li class="questions-form__item questions-form__phone input__item">
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required="" title="10 цифр">
+              <label class="visually-hidden" for="phone">Поле ввода номера телефона</label>
+            </li>
+
+            <li class="questions-form__item questions-form__question input__item">
+              <textarea name="question" id="question" cols="30" rows="10">Ваш вопрос</textarea>
+              <label class="visually-hidden" for="question">Поле ввода вашего вопроса</label>
+            </li>
+          </ul>
+
+          <button class="questions-form__button" type="submit">Задать вопрос</button>
+
+          <div class="questions-form__checkbox input__checkbox">
+            <input type="checkbox" id="personal" name="personal" required="" checked="">
+            <label for="personal">Я согласен на обработку персональных данных</label>
+          </div>
+
+        </form>
+
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -176,21 +205,21 @@
         </div>
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.facebook.com/" aria-label="Смартдевайс на Фейсбуке">
+            <a class="page-footer__social-link" href="https://www.facebook.com/" aria-label="Смарт девайс на Фейсбуке">
               <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Фэйсбук">
                 <use xlink:href="img/icons/sprite.svg#logo-fb"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.ok.ru/" aria-label="Смартдевайс в Одноклассниках">
+            <a class="page-footer__social-link" href="https://www.ok.ru/" aria-label="Смарт девайс в Одноклассниках">
               <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Одноклассники">
                 <use xlink:href="img/icons/sprite.svg#logo-ok"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.vk.com/" aria-label="Смартдевайс Вконтакте">
+            <a class="page-footer__social-link" href="https://www.vk.com/" aria-label="Смарт девайс Вконтакте">
               <svg class="page-footer__social-img" width="27" height="27" aria-label="Логотип Вконтакте">
                 <use xlink:href="img/icons/sprite.svg#logo-vk"></use>
               </svg>
@@ -268,7 +297,39 @@
       </ul>
     </div>
   </footer>
+  <div class="popup" id="popup">
+    <button class="popup__close popup__close--hidden" aria-label="Закрыть форму заказа обратного звонка"></button>
+    <h3 class="visually-hidden">Форма заказа обратного звонка</h3>
+    <p>Закажите звонок</p>
+    <form class="popup__form input" action="https://echo.htmlacademy.ru" method="post">
+      <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
+      <ul class="popup__form-list input__list">
+        <li class="popup__form-item input__item">
+          <input type="text" name="popup-name" id="popup-name" placeholder="Имя" required="" minlength="2" maxlength="50" title="Ваше имя или никнейм">
+          <label class="visually-hidden" for="popup-name">Поле ввода имени</label>
+        </li>
+
+        <li class="popup__form-item input__item">
+          <input type="tel" name="phone" id="popup-phone" placeholder="Телефон" required="" title="10 цифр">
+          <label class="visually-hidden" for="popup-phone">Поле ввода номера телефона</label>
+        </li>
+
+        <li class="popup__form-item input__item">
+          <textarea name="question" cols="30" rows="10" id="popup-question">Ваш вопрос</textarea>
+          <label class="visually-hidden" for="popup-question">Поле ввода вашего вопроса</label>
+        </li>
+      </ul>
+
+      <button class="popup__form-button" type="submit">Отправить</button>
+
+      <div class="popup__form-checkbox input__checkbox">
+        <input type="checkbox" id="popup-person" name="personal" required="">
+        <label for="popup-person">Я согласен на обработку персональных данных</label>
+      </div>
+    </form>
+  </div>
   <script src="js/script.js"></script>
 </body>
+
 
 </html>

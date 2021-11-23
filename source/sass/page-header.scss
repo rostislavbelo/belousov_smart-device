@@ -172,6 +172,10 @@
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
+
+  &:hover {
+    @include hover3
+  }
 }
 
 .page-header__contacts-content {
@@ -198,6 +202,10 @@
 }
 
 .page-header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 180px;
   height: 45px;
   border: 1px solid #FFFFFF;
@@ -213,7 +221,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
-  cursor: pointer;
+  // cursor: pointer;
+
+  &:hover {
+    @include hover2;
+  }
 }
 
 .page-header__contacts-mail-icon {
@@ -291,8 +303,6 @@
       background-size: cover;
     }
   }
-
-
 
   .page-header__logo-area {
     padding: 0;
