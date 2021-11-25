@@ -1,9 +1,11 @@
+//____________________________________________________________________________________
 .page-header {
+  width: 100%;
   margin: 0 0 112px 0;
   padding: 0 0 40px 0;
   width: 100%;
   min-height: 838px;
-  background: #1B2D37 url("/img/background-top.png") no-repeat;
+  background: #1B2D37 url("../img/background-top.png") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -17,9 +19,9 @@
   width: 100%;
   max-width: 1920px;
   height: 802px;
-  background: url("/img/double-triangle.png") no-repeat;
+  background: url("../img/double-triangle.png") no-repeat;
   background-position: center;
-  top: 0;
+  bottom: 76px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
@@ -27,12 +29,12 @@
 
 .page-header__wrapper {
   height: 100%;
-  max-width: 1538px;
+  max-width: 1460px;
   margin: 0 auto;
-  padding: 33px 25px 0 25px;
+  padding: 33px 0 0 0;
+  grid-template-columns: 18% 62.5% 15%;
   display: grid;
-  grid-template-columns: 202px 1fr max-content;
-  grid-template-rows: min-content;
+  grid-template-rows: min-content 1fr;
   grid-template-areas:
     "logo contacts buttons"
     "main main main";
@@ -40,6 +42,11 @@
   row-gap: 18px;
   z-index: 5;
   position: relative;
+
+  @media (min-width: 1023px) and (max-width: 1920px) {
+    max-width: calc(1vw * 1460 / (1920 / 100));
+    column-gap: calc(1vw * 30 / (1920 / 100));
+  }
 }
 
 .page-header__wrapper::before {
@@ -48,13 +55,13 @@
   content: "";
   display: block;
   position: absolute;
-  background: url("/img/motherboard.png") no-repeat;
+  background: url("../img/motherboard.png") no-repeat;
   z-index: 0;
-  top: 29.7%;
+  bottom: 99px;
   left: 55%;
 
   @media (min-resolution: 2dppx) {
-    background: url("/img/motherboard@2x.png") no-repeat;
+    background: url("../img/motherboard@2x.png") no-repeat;
     width: 705px;
     height: 515px;
     background-size: cover;
@@ -63,7 +70,7 @@
 
 .page-header__logo-area {
   padding: 0;
-  margin: 0 0 0 61px;
+  margin: 0 0 0 22px;
   width: 100%;
   grid-area: logo;
 }
@@ -104,8 +111,8 @@
 }
 
 .page-header__contacts-list {
-  padding: 0;
-  margin: 0;
+  padding: 18px 0 0 0;
+  margin: 0 0 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -118,9 +125,10 @@
 .page-header__contacts-item {
   margin: 0 0 15px 88px;
   position: relative;
+  align-self: flex-start;
 
-  @media (min-width: 1023px) and (max-width: 1920px) {
-    margin-left: calc(1vw * 88 / (1920 / 100));
+  @media (min-width: 1023px) and (max-width: 1900px) {
+    margin-left: calc(1vw * 88 / (1900 / 100));
   }
 }
 
@@ -152,13 +160,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 100;
-  justify-content: flex-end;
+  justify-content: flex-start;
   grid-area: buttons;
-  padding: 4px 65px 0 0;
+  padding: 4px 15px 0 10px;
 }
 
 .page-header__button-item {
-  margin: 0 0 15px 10px;
+  margin: 0 0 15px 8px;
 }
 
 .page-header__button {
@@ -201,7 +209,7 @@
     padding: 0 0 40px 0;
     width: 100%;
     min-height: 646px;
-    background: #1B2D37 url("/img/tablet/background-top-tablet.png") no-repeat;
+    background: #1B2D37 url("../img/tablet/background-top-tablet.png") no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -215,11 +223,12 @@
     width: 100%;
     max-width: 528px;
     height: 505px;
-    background: url("/img/tablet/double-triangle-tablet.png") no-repeat;
+    background: url("../img/tablet/double-triangle-tablet.png") no-repeat;
     background-repeat: no-repeat;
     background-position: center;
-    top: -40px;
-    left: 57%;
+    top: unset;
+    bottom: 222px;
+    left: 57.2%;
     transform: unset;
     z-index: -2;
   }
@@ -247,14 +256,15 @@
     content: "";
     display: block;
     position: absolute;
-    background: url("/img/tablet/motherboard-tablet.png") no-repeat;
+    background: url("../img/tablet/motherboard-tablet.png") no-repeat;
     z-index: 0;
     left: unset;
-    top: 16.7%;
+    top: unset;
     right: -3px;
+    bottom: 212px;
 
     @media (min-resolution: 2dppx) {
-      background: url("/img/tablet/motherboard-tablet@2x.png") no-repeat;
+      background: url("../img/tablet/motherboard-tablet@2x.png") no-repeat;
       width: 260px;
       height: 340px;
       background-size: cover;
@@ -299,7 +309,7 @@
   }
 
   .page-header__contacts-list {
-    padding: 0 25px 0 0;
+    padding: 6px 25px 0 0;
     margin: 0 0 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -361,7 +371,7 @@
     padding: 0 0 40px 0;
     width: 100%;
     min-height: 607px;
-    background: #1B2D37 url("/img/mobile/background-top-mobile.png") no-repeat;
+    background: #1B2D37 url("../img/mobile/background-top-mobile.png") no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -375,9 +385,10 @@
     width: 100%;
     max-width: 768px;
     height: 700px;
-    background: url("/img/mobile/double-triangle-mobile.png") no-repeat;
+    background: url("../img/mobile/double-triangle-mobile.png") no-repeat;
     background-position: center;
-    top: -187px;
+    top: unset;
+    bottom: 134px;
     left: 50%;
     -webkit-transform: unset;
     transform: unset;
@@ -409,14 +420,15 @@
     content: "";
     display: block;
     position: absolute;
-    background: url("/img/mobile/motherboard-mobile.png") no-repeat;
+    background: url("../img/mobile/motherboard-mobile.png") no-repeat;
     z-index: 0;
     left: unset;
-    top: 15%;
+    top: unset;
     right: 1px;
+    bottom: 314px;
 
     @media (min-resolution: 2dppx) {
-      background: url("/img/mobile/motherboard-mobile@2x.png") no-repeat;
+      background: url("../img/mobile/motherboard-mobile@2x.png") no-repeat;
       width: 294px;
       height: 220px;
       background-size: cover;
