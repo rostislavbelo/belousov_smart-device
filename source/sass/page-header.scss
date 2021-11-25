@@ -40,10 +40,6 @@
   row-gap: 18px;
   z-index: 5;
   position: relative;
-
-  /*   @media (min-width: 1023px) and (max-width: 1300px) {
-    background-position: left calc(1vw * 873 / (1300 / 100)) top 256px;
-  } */
 }
 
 .page-header__wrapper::before {
@@ -64,42 +60,6 @@
     background-size: cover;
   }
 }
-
-
-/*   @media (min-resolution: 2dppx) {
-    background: url("/img/motherboard@2x.png") no-repeat;
-    background-position: left 873px top 256px;
-  } */
-
-/* .page-header__wrapper {
-  height: 100%;
-  max-width: 1538px;
-  margin: 0 auto;
-  padding: 33px 25px 0 25px;
-  display: grid;
-  grid-template-columns: 202px 1fr max-content;
-  grid-template-rows: min-content;
-  grid-template-areas:
-    "logo contacts buttons"
-    "main main main";
-  column-gap: 40px;
-  row-gap: 18px;
-  z-index: 5;
-  position: relative;
-  background: url("/img/motherboard.png") no-repeat;
-  background-position: left 873px top 256px;
-
-  @media (min-width: 1023px) and (max-width: 1300px) {
-    background-position: left calc(1vw * 873 / (1300 / 100)) top 256px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background: url("/img/motherboard@2x.png") no-repeat;
-    background-position: left 873px top 256px;
-  }
-} */
-
-
 
 .page-header__logo-area {
   padding: 0;
@@ -172,10 +132,6 @@
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
-
-  &:hover {
-    @include hover3
-  }
 }
 
 .page-header__contacts-content {
@@ -183,6 +139,10 @@
   margin: 0;
   display: flex;
   text-decoration: none;
+}
+
+.page-header__contacts-content:hover p {
+  @include hover3
 }
 
 .page-header__button-list {
@@ -221,7 +181,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
-  // cursor: pointer;
 
   &:hover {
     @include hover2;
@@ -280,8 +239,6 @@
     row-gap: 18px;
     z-index: 5;
     position: relative;
-    /*     background: url("/img/tablet/motherboard-tablet.png") no-repeat;
-    background-position: right -2px top 114px; */
   }
 
   .page-header__wrapper::before {
@@ -373,6 +330,14 @@
     text-decoration: none;
   }
 
+  .page-header__contacts-content:hover {
+    stroke: rgba(0, 178, 255, 0.8);
+  }
+
+  .page-header__contacts-content:hover {
+    stroke: rgba(0, 178, 255, 0.8);
+  }
+
   .page-header__button-list {
     display: none;
   }
@@ -436,8 +401,6 @@
     row-gap: 18px;
     z-index: 5;
     position: relative;
-    /*     background: url("/img/mobile/motherboard-mobile.png") no-repeat;
-    background-position: right 0px top 92px; */
   }
 
   .page-header__wrapper::before {
@@ -459,7 +422,6 @@
       background-size: cover;
     }
   }
-
 
   .page-header__logo-area {
     padding: 0;

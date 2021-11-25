@@ -69,7 +69,6 @@
       </section>
     </div>
   </header>
-
   <main class="page-main">
     <section class="advantage">
       <div class="advantage__wrapper">
@@ -79,7 +78,7 @@
             <svg class="advantage__img" width="35" height="35" aria-label="Иконка часики">
               <use xlink:href="img/icons/sprite.svg#watch"></use>
             </svg>
-            <h6>Оперативные сроки</h6>
+            <h3>Оперативные сроки</h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
               заказы плат и комплектующих в самые короткие сроки</p>
           </li>
@@ -87,7 +86,7 @@
             <svg class="advantage__img" width="35" height="35" aria-label="Иконка-иллюстрация">
               <use xlink:href="img/icons/sprite.svg#hired"></use>
             </svg>
-            <h6>Крупные поставщики</h6>
+            <h3>Крупные поставщики</h3>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,&nbsp;HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
             </p>
@@ -96,7 +95,7 @@
             <svg class="advantage__img" width="35" height="35" aria-label="Иконка часики">
               <use xlink:href="img/icons/sprite.svg#detective"></use>
             </svg>
-            <h6>Полная конфиденциальность</h6>
+            <h3>Полная конфиденциальность</h3>
             <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
             </p>
           </li>
@@ -104,7 +103,7 @@
             <svg class="advantage__img" width="35" height="35" aria-label="Иконка часики">
               <use xlink:href="img/icons/sprite.svg#money"></use>
             </svg>
-            <h6>Персонализация стоимости</h6>
+            <h3>Персонализация стоимости</h3>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
               устраивает.</p>
           </li>
@@ -157,9 +156,7 @@
     </section>
     <section class="questions-form" id="questions">
       <div class="questions-form__wrapper">
-
         <h2 class="visually-hidden">Форма обратной связи</h2>
-
         <form class="questions-form__main input" action="https://echo.htmlacademy.ru" method="post">
           <span>Остались вопросы? Задайте их нам!</span>
           <span>Мы проконсультируем Вас бесплатно</span>
@@ -169,27 +166,21 @@
                 title="Ваше имя или никнейм">
               <label class="visually-hidden" for="name">Поле ввода имени</label>
             </li>
-
             <li class="questions-form__item questions-form__phone input__item">
               <input type="tel" name="phone" id="phone" placeholder="Телефон" required title="10 цифр">
               <label class="visually-hidden" for="phone">Поле ввода номера телефона</label>
             </li>
-
             <li class="questions-form__item questions-form__question input__item">
               <textarea name="question" id="question" cols="30" rows="10">Ваш вопрос</textarea>
               <label class="visually-hidden" for="question">Поле ввода вашего вопроса</label>
             </li>
           </ul>
-
           <button class="questions-form__button" type="submit">Задать вопрос</button>
-
           <div class="questions-form__checkbox input__checkbox">
-            <input type="checkbox" id="personal" name="personal" required checked>
+            <input type="checkbox" id="personal" name="personal" required>
             <label for="personal">Я согласен на обработку персональных данных</label>
           </div>
-
         </form>
-
       </div>
     </section>
   </main>
@@ -234,14 +225,14 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__sections-site">
+      <div class="page-footer__sections-site sections-hidden">
         <div class="page-footer__sections-site-wrapper">
-          <h6>Разделы сайта
-            <button class="page-footer__sections-site-button" type="button"
+          <h3>Разделы сайта
+            <button class="page-footer__sections-site-button sections-hidden__button-site" type="button"
               aria-label="Открыть-закрыть список разделов сайта">
             </button>
-          </h6>
-          <ul class="page-footer__sections-site-list">
+          </h3>
+          <ul class="page-footer__sections-site-list sections-hidden__list-site">
             <li class="page-footer__sections-site-item">
               <a class="page-footer__sections-site-link" href="#main-info">О компании</a>
             </li>
@@ -266,13 +257,13 @@
           </ul>
         </div>
       </div>
-      <div class="page-footer__address">
-        <h6>Наш офис
-          <button class="page-footer__address-button" type="button"
+      <div class="page-footer__address sections-hidden">
+        <h3>Наш офис
+          <button class="page-footer__address-button sections-hidden__button-address" type="button"
             aria-label="Открыть-закрыть список аресов и телефонов">
           </button>
-        </h6>
-        <ul class="page-footer__address-list">
+        </h3>
+        <ul class="page-footer__address-list sections-hidden__list-address">
           <li class="page-footer__address-item">
             <a class="page-footer__address-link" href="https://goo.gl/maps/zPC633ayE2vYEtCW8">г. Мытищи, Олимпийский
               проспект, д.10</a>
@@ -307,10 +298,11 @@
     </div>
   </footer>
   <div class="popup" id="popup">
-    <button class="popup__close popup__close--hidden" aria-label="Закрыть форму заказа обратного звонка"></button>
-    <h3 class="visually-hidden">Форма заказа обратного звонка</h3>
-    <p>Закажите звонок</p>
     <form class="popup__form input" action="https://echo.htmlacademy.ru" method="post">
+      <button class="popup__button-close popup__button-close--hidden"
+        aria-label="Закрыть форму заказа обратного звонка"></button>
+      <h3 class="visually-hidden">Форма заказа обратного звонка</h3>
+      <p>Закажите звонок</p>
       <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
       <ul class="popup__form-list input__list">
         <li class="popup__form-item input__item">
@@ -318,20 +310,16 @@
             title="Ваше имя или никнейм">
           <label class="visually-hidden" for="popup-name">Поле ввода имени</label>
         </li>
-
-        <li class="popup__form-item input__item">
+        <li class="popup__form-item">
           <input type="tel" name="phone" id="popup-phone" placeholder="Телефон" required title="10 цифр">
           <label class="visually-hidden" for="popup-phone">Поле ввода номера телефона</label>
         </li>
-
         <li class="popup__form-item input__item">
           <textarea name="question" cols="30" rows="10" id="popup-question">Ваш вопрос</textarea>
           <label class="visually-hidden" for="popup-question">Поле ввода вашего вопроса</label>
         </li>
       </ul>
-
       <button class="popup__form-button" type="submit">Отправить</button>
-
       <div class="popup__form-checkbox input__checkbox">
         <input type="checkbox" id="popup-person" name="personal" required>
         <label for="popup-person">Я согласен на обработку персональных данных</label>
@@ -340,6 +328,5 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 
 </html>

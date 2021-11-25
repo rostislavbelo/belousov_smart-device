@@ -3,6 +3,11 @@
   min-width: 320px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
+}
+
+.page-body--no-scroll {
+  position:fixed;
+  overflow-y: scroll;
 }

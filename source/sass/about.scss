@@ -2,9 +2,6 @@
   max-width: 100%;
   padding: 0;
   margin: 0 auto 108px;
-  /*   display: flex;
-  justify-content: flex-end;
-  position: relative; */
 }
 
 .about__wrapper {
@@ -27,6 +24,13 @@
   background: url("/img/year2005.png") no-repeat;
   left: 27px;
   top: 2px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("/img/year2005@2x.png") no-repeat;
+    width: 220px;
+    height: 317px;
+    background-size: cover;
+  }
 }
 
 .about__list {
@@ -85,9 +89,6 @@
     max-width: 100%;
     padding: 0 0 20px 0;
     margin: 0 auto 62px;
-    /*   display: flex;
-    justify-content: flex-end;
-    position: relative; */
   }
 
   .about__wrapper {
@@ -110,6 +111,13 @@
     background: url("/img/tablet/year2005-tablet.png") no-repeat;
     left: 1px;
     top: -2px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("/img/tablet/year2005-tablet@2x.png") no-repeat;
+      width: 251px;
+      height: 362px;
+      background-size: cover;
+    }
   }
 
   .about__list {
@@ -174,9 +182,6 @@
     max-width: 100%;
     padding: 0 0 20px 0;
     margin: 0 15px 45px 15px;
-    /*   display: flex;
-    justify-content: flex-end;
-    position: relative; */
   }
 
   .about__wrapper {

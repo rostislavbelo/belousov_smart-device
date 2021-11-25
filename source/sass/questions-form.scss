@@ -1,5 +1,5 @@
 .questions-form {
-  margin: 0;
+  margin: 0 0 65px 0;
   width: 100%;
   min-height: 670px;
   background: #00B2FF;
@@ -27,6 +27,13 @@
     left: 50%;
     transform: translateX(-120%);
     background: url("/img/paper_airplane.png") no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("/img/paper_airplane@2x.png") no-repeat;
+      width: 511px;
+      height: 288px;
+      background-size: cover;
+    }
   }
 }
 
@@ -158,7 +165,7 @@
 
 @media (max-width: $desktop-width) {
   .questions-form {
-    margin: 0;
+    margin: 0 0 18px 0;
     width: 100%;
     min-height: 664px;
     background: #00B2FF;
@@ -294,7 +301,7 @@
 
 @media (max-width: $tablet-width) {
   .questions-form {
-    margin: 0;
+    margin: 0 0 44px 0;
     width: 100%;
     min-height: 640px;
     background: #00B2FF;

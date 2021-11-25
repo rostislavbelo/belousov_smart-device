@@ -89,8 +89,8 @@
   position: relative;
 }
 
-.page-footer__address h6,
-.page-footer__sections-site h6 {
+.page-footer__address h3,
+.page-footer__sections-site h3 {
   padding: 0;
   margin: 0 0 26px 0;
   font-family: "Roboto Condensed";
@@ -234,14 +234,6 @@
     grid-template-areas:
       "promo promo"
       "site address";
-
-    /*     @media (min-width: 1023px) and (max-width: 1920px) {
-      padding-left: 30px;
-    }
-
-    @media (min-width: 1023px) and (max-width: 1250px) {
-      grid-template-columns: 25% 39% 1fr;
-    } */
   }
 
   .page-footer__logo-area {
@@ -324,8 +316,8 @@
     grid-area: site;
   }
 
-  .page-footer__address h6,
-  .page-footer__sections-site h6 {
+  .page-footer__address h3,
+  .page-footer__sections-site h3 {
     padding: 0;
     margin: 0 0 24px 0;
     font-family: "Roboto Condensed";
@@ -512,7 +504,7 @@
   }
 
   .page-footer__sections-site {
-    padding: 30px 0 25px;
+    padding: 30px 0 11px;
     margin: 0;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     display: flex;
@@ -527,8 +519,8 @@
     }
   }
 
-  .page-footer__address h6,
-  .page-footer__sections-site h6 {
+  .page-footer__address h3,
+  .page-footer__sections-site h3 {
     padding: 0;
     font-family: "Roboto Condensed";
     font-style: normal;
@@ -539,13 +531,13 @@
     text-transform: uppercase;
     color: #1B2D37;
     min-width: unset;
-    margin: 0 0 32px 0;
+    margin: 0 0 16px;
     position: relative;
     width: 100%;
   }
 
-  .page-footer__address h6 {
-    margin: 0 0 32px 0;
+  .page-footer__address h3 {
+    margin: 0 0 4px 0;
     width: 100%;
   }
 
@@ -576,7 +568,7 @@
   }
 
   .page-footer__address {
-    padding: 38px 0 0 0;
+    padding: 28px 0 0;
     margin: 0 15px 0 15px;
     display: flex;
     flex-direction: column;
@@ -589,7 +581,7 @@
 
   .page-footer__address-list {
     list-style-type: none;
-    padding: 0;
+    padding: 28px 0 0 0;
     margin: 0;
     min-width: unset;
   }
@@ -608,7 +600,7 @@
   .page-footer__copyright-list {
     max-width: unset;
     list-style-type: none;
-    padding: 27px 23px 0 23px;
+    padding: 28px 23px 0 45px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -651,28 +643,5 @@
     @media (min-width: 430px) and (max-width: 767px) {
       right: 20%;
     }
-  }
-
-  .page-footer__sections-site-button::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 1px;
-    background: #C4C4C4;
-    left: 1px;
-    top: 50%;
-  }
-
-
-  .page-footer__address-button::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 1px;
-    background: #C4C4C4;
-    left: 1px;
-    top: 50%;
   }
 }

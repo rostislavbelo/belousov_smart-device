@@ -1,0 +1,28 @@
+.sections-hidden__list--hidden {
+  display: none;
+}
+
+.sections-hidden__button-address--open::before,
+.sections-hidden__button-site--open::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 1px;
+  background: #C4C4C4;
+  left: 1px;
+  top: 50%;
+}
+
+.sections-hidden__button-address--closed::after,
+.sections-hidden__button-site--closed::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 1px;
+  background: #C4C4C4;
+  left: 1px;
+  top: 50%;
+  transform: rotate(90deg);
+}

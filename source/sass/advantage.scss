@@ -72,7 +72,6 @@
   @media (min-width: 1023px) and (max-width: 1250px) {
     width: 47.5%;
   }
-
 }
 
 .advantage__item:nth-child(2n) {
@@ -84,7 +83,7 @@
   margin: 0 0 17px 0;
 }
 
-.advantage__item h6 {
+.advantage__item h3 {
   padding: 0;
   margin: 0 0 14px 0;
   font-family: "Roboto Condensed";
@@ -178,7 +177,6 @@
     @media (min-width: 767px) and (max-width: 1024px) {
       width: 47.5%;
     }
-
   }
 
   .advantage__item:nth-child(2n) {
@@ -195,7 +193,7 @@
     margin: 0 0 4px 0;
   }
 
-  .advantage__item h6 {
+  .advantage__item h3 {
     padding: 0;
     margin: 0 0 10px 0;
     font-family: "Roboto Condensed";
@@ -215,7 +213,6 @@
     line-height: 22px;
     color: #666666;
   }
-
 
   .advantage__item:hover,
   .advantage__item:hover * {
@@ -306,11 +303,11 @@
     margin: 0 0 1px 0;
   }
 
-  .advantage__item:nth-child(3n) h6 {
+  .advantage__item:nth-child(3n) h3 {
     margin-bottom: 17px;
   }
 
-  .advantage__item:nth-child(4n) h6 {
+  .advantage__item:nth-child(4n) h3 {
     margin-bottom: 20px;
   }
 
@@ -330,7 +327,7 @@
     margin: 0 0 8px 0;
   }
 
-  .advantage__item h6 {
+  .advantage__item h3 {
     padding: 0;
     margin: 0 0 10px 0;
     font-family: "Roboto Condensed";
@@ -350,7 +347,6 @@
     line-height: 21.5px;
     color: #666666;
   }
-
 
   .advantage__item:hover,
   .advantage__item:hover * {

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 9px 18px;
   background: rgba(255, 255, 255, 0.1);
-  width: 269px;
+ // width: 269px;
   height: 50px;
   font-family: "PT Mono";
   font-style: normal;
@@ -33,17 +33,6 @@
   max-height: 154px;
   box-sizing: border-box;
 }
-
-/* .input label {
-  width: 35%;
-  font-family: "PT Mono";
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-  opacity: 0.8;
-  display: block;
-} */
 
 .input__checkbox input {
   @include hidden;
@@ -118,7 +107,6 @@
     padding: 8px 0 0 75px;
   }
 
-
   .input__checkbox label {
     &::before {
       left: 41px;
@@ -133,7 +121,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .input textarea {
     max-height: 106px;
   }
