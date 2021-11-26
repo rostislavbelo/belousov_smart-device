@@ -3,3 +3,22 @@
 $mobile-width: 320px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
+
+//Safe fonts
+
+$sans-serif:"Roboto Condensed",
+  "Arial Narrow",
+  sans-serif;
+
+$monospace: "PT Mono",
+  "Courier",
+  monospace;
+
+//Colors
+
+$white: #ffffff;
+$blue: #00b2ff;
+$gray66: #666666;
+$gray: #cdcdcd;
+$gray3: #1b2d37;
+$gray4: #ebebeb;

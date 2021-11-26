@@ -1,31 +1,64 @@
 .main-info {
   margin: 0 auto;
-  padding: 200px 0 0 0;
+  padding: 189px 0 185px 0;
   width: 100%;
-  height: 100%;
   position: relative;
   grid-area: main;
 }
 
+.main-info::before {
+  width: 705px;
+  height: 515px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/motherboard.png") no-repeat;
+  z-index: 0;
+  top: 133px;
+  left: 55%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/motherboard@2x.png") no-repeat;
+    width: 705px;
+    height: 515px;
+    background-size: cover;
+  }
+}
+
+.main-info::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 611px;
+  height: 487px;
+  background: url("../img/icons/double-triangle.svg") no-repeat;
+  background-position: center;
+  top: 146px;
+  left: 77%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
 .main-info__wrapper {
   max-width: 100%;
-  margin: 0 0 0 20px;
-  padding: 0 0 230px 0;
+  margin: 0 0 0 24px;
+  padding: 0 0 50px;
 }
 
 .main-info__wrapper h1 {
   padding: 0;
   margin: 0 0 28px 0;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
   max-width: 750px;
 
-  @media (max-width: 1520px) {
+  @media (max-width: 1220px) {
     max-width: 650px;
   }
 }
@@ -33,17 +66,17 @@
 .main-info__wrapper p {
   padding: 0 0 0 95px;
   margin: 0 0 43px 0;
-  font-family: "PT Mono";
+  font-family: $monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
-  color: #FFFFFF;
+  color: $white;
   max-width: 690px;
   position: relative;
 
-  @media (max-width: 1520px) {
-    max-width: 406px;
+  @media (max-width: 1260px) {
+    max-width: 420px;
   }
 }
 
@@ -63,15 +96,15 @@
   margin: 0 0 0 97px;
   width: 407px;
   height: 55px;
-  background: #00B2FF;
+  background: $blue;
   border-radius: 5px;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -87,14 +120,46 @@
 }
 
 @media (max-width: $desktop-width) {
-
   .main-info {
     margin: 0 auto;
-    padding: 100px 0 0 0;
+    padding: 107px 0 0 0;
     width: 100%;
     height: 100%;
     position: relative;
-    grid-area: main;
+  }
+
+  .main-info::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 529px;
+    height: 506px;
+    background: url("../img/tablet/double-triangle-tablet.svg") no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 56%;
+    transform: unset;
+    z-index: -2;
+  }
+
+  .main-info::before {
+    width: 260px;
+    height: 340px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/tablet/motherboard-tablet.png") no-repeat;
+    z-index: 0;
+    right: 22px;
+    top: 32px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tablet/motherboard-tablet@2x.png") no-repeat;
+      width: 260px;
+      height: 340px;
+      background-size: cover;
+    }
   }
 
   .main-info__wrapper {
@@ -136,15 +201,15 @@
     margin: 0 0 0 115px;
     width: 379px;
     height: 55px;
-    background: #00B2FF;
+    background: $blue;
     border-radius: 5px;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white;
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -155,11 +220,42 @@
 @media (max-width: $tablet-width) {
   .main-info {
     margin: 0 auto;
-    padding: 208px 0 0 0;
+    padding: 216px 0 0 0;
     width: 100%;
     height: 100%;
     position: relative;
     grid-area: main;
+  }
+
+  .main-info::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 506px;
+    height: 484px;
+    background: url("../img/mobile/double-triangle-mobile.svg") no-repeat;
+    background-position: center;
+    left: 47%;
+  }
+
+  .main-info::before {
+    width: 294px;
+    height: 220px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/mobile/motherboard-mobile.png") no-repeat;
+    right: 15px;
+    bottom: unset;
+    z-index: -1;
+    top: 22px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/mobile/motherboard-mobile@2x.png") no-repeat;
+      width: 294px;
+      height: 220px;
+      background-size: cover;
+    }
   }
 
   .main-info__wrapper {
@@ -185,7 +281,8 @@
     margin: 0 0 39px;
     font-size: 16px;
     line-height: 156.8%;
-    max-width: 430px;
+    max-width: 360px;
+    width: 75%;
     position: relative;
   }
 
@@ -203,19 +300,18 @@
 
   .main-info__button {
     margin: 0 0 0 0;
-    width: unset;
-    min-width: 287px;
-    max-width: 300px;
+    width: 90%;
+    max-width: 360px;
     height: 55px;
-    background: #00B2FF;
+    background: $blue;
     border-radius: 5px;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white;
     display: flex;
     text-decoration: none;
     justify-content: center;

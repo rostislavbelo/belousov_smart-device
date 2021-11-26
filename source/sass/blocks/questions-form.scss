@@ -2,7 +2,7 @@
   margin: 0 0 65px 0;
   width: 100%;
   min-height: 670px;
-  background: #00B2FF;
+  background: $blue;
   position: relative;
 
   &::before {
@@ -75,22 +75,22 @@
   flex-wrap: wrap;
 }
 
-.questions-form__main span {
+.questions-form__main h2 {
   width: 100%;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: $white;
   margin: 0 0 7px 0;
 }
 
-.questions-form__main span:not(:nth-child(1)) {
-  font-family: "PT Mono";
+.questions-form__main span {
+  font-family: $monospace;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: $white;
   margin: 0 4px 53px;
 }
 
@@ -140,7 +140,7 @@
 .questions-form__button {
   width: 270px;
   height: 45px;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -148,14 +148,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background: transparent;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: $white;
+  border: 1px solid $white;
   border-radius: 5px;
   cursor: pointer;
   margin: 0 0 0 3px;
 
   @media (min-width: 1023px) and (max-width: 1300px) {
-    width: calc(1vw * 270/ (1300 / 100));
+    width: calc(1vw * 270 / (1300 / 100));
   }
 
   &:hover {
@@ -168,7 +168,7 @@
     margin: 0 0 18px 0;
     width: 100%;
     min-height: 664px;
-    background: #00B2FF;
+    background: $blue;
     position: relative;
 
     &::before {
@@ -184,7 +184,6 @@
     width: calc(100% - 174px);
     max-width: 660px;
     margin: 0 auto;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: unset;
@@ -209,22 +208,22 @@
     justify-content: flex-start;
   }
 
-  .questions-form__main span {
+  .questions-form__main h2 {
     width: 100%;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 32px;
     line-height: 140.62%;
-    color: #FFFFFF;
+    color: $white;
     margin: 0 0 17px 0;
   }
 
-  .questions-form__main span:not(:nth-child(1)) {
-    font-family: "PT Mono";
+  .questions-form__main span {
+    font-family: $monospace;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $white;
     margin: 0 4px 53px;
   }
 
@@ -275,7 +274,7 @@
   .questions-form__button {
     width: 280px;
     height: 45px;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -283,14 +282,14 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background: transparent;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: $white;
+    border: 1px solid $white;
     border-radius: 5px;
     cursor: pointer;
     margin: 0 0 0 3px;
 
     @media (min-width: 1023px) and (max-width: 1300px) {
-      width: calc(1vw * 270/ (1300 / 100));
+      width: calc(1vw * 270 / (1300 / 100));
     }
 
     &:hover {
@@ -304,7 +303,7 @@
     margin: 0 0 44px 0;
     width: 100%;
     min-height: 640px;
-    background: #00B2FF;
+    background: $blue;
     position: relative;
   }
 
@@ -312,7 +311,6 @@
     width: calc(100% - 30px);
     max-width: 550px;
     margin: 0 auto;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: unset;
@@ -329,22 +327,22 @@
     justify-content: flex-start;
   }
 
-  .questions-form__main span {
+  .questions-form__main h2 {
     width: 100%;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 28px;
     line-height: 140.62%;
-    color: #FFFFFF;
+    color: $white;
     margin: 0 0 13px 0;
   }
 
-  .questions-form__main span:not(:nth-child(1)) {
-    font-family: "PT Mono";
+  .questions-form__main span {
+    font-family: $monospace;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $white;
     margin: 0 0 26px;
   }
 
@@ -395,7 +393,7 @@
   .questions-form__button {
     width: 100%;
     height: 45px;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -403,8 +401,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background: transparent;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: $white;
+    border: 1px solid $white;
     border-radius: 5px;
     cursor: pointer;
     margin: 0 0 24px 0;

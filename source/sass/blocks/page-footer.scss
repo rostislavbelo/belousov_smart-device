@@ -22,7 +22,7 @@
 
 .page-footer__logo-area {
   padding: 0;
-  margin: 0 0 53px 0px;
+  margin: 0 0 53px 0;
   width: 100%;
 }
 
@@ -40,12 +40,9 @@
   height: 52px;
 }
 
-.page-footer__logo-text {
-  padding: 7px 0 0 0;
-}
-
-.page-footer__logo-text p {
-  color: #203C42;
+.page-footer__logo-img-service {
+  width: 147px;
+  height: 40px;
 }
 
 .page-footer__logo-area-since {
@@ -67,10 +64,10 @@
 }
 
 .page-footer__social-img {
-  fill: #CDCDCD;
+  fill: $gray;
 
   &:hover {
-    fill: #00B2FF;
+    fill: $blue;
   }
 
   &:active {
@@ -93,14 +90,14 @@
 .page-footer__sections-site h3 {
   padding: 0;
   margin: 0 0 26px 0;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: $gray3;
 }
 
 .page-footer__sections-site-list {
@@ -110,7 +107,6 @@
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, 1fr);
-  // grid-auto-flow: column;
 }
 
 .page-footer__sections-site-item {
@@ -118,31 +114,31 @@
   min-width: 200px;
 }
 
-.page-footer__sections-site-item:nth-child(1n) {
+.page-footer__sections-site-item:nth-child(1) {
   order: -7;
 }
 
-.page-footer__sections-site-item:nth-child(2n) {
+.page-footer__sections-site-item:nth-child(2) {
   order: -5;
 }
 
-.page-footer__sections-site-item:nth-child(3n) {
+.page-footer__sections-site-item:nth-child(3) {
   order: -2;
 }
 
-.page-footer__sections-site-item:nth-child(4n) {
+.page-footer__sections-site-item:nth-child(4) {
   order: 0;
 }
 
-.page-footer__sections-site-item:nth-child(5n) {
+.page-footer__sections-site-item:nth-child(5) {
   order: -6;
 }
 
-.page-footer__sections-site-item:nth-child(6n) {
+.page-footer__sections-site-item:nth-child(6) {
   order: -4;
 }
 
-.page-footer__sections-site-item:nth-child(7n) {
+.page-footer__sections-site-item:nth-child(7) {
   order: -1;
 }
 
@@ -151,11 +147,11 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
-  font-family: "PT Mono";
+  font-family: $monospace;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: $gray3;
   opacity: 0.5;
 
   @media (min-width: 1023px) and (max-width: 1320px) {
@@ -202,15 +198,22 @@
   grid-template-columns: 15.3% 25.6% 42.5% 1fr;
 }
 
+.page-footer__copyright-link,
 .page-footer__copyright-item span {
-  font-family: "PT Mono";
+  font-family: $sans-serif;
+  text-decoration: none;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: $gray3;
   opacity: 0.5;
+  display: block;
+}
+
+.page-footer__copyright-link:hover {
+  @include hover3;
 }
 
 .page-footer__address-button,
@@ -261,7 +264,7 @@
   }
 
   .page-footer__logo-text p {
-    color: #203C42;
+    color: #203c42;
   }
 
   .page-footer__logo-area-since {
@@ -271,15 +274,14 @@
   }
 
   .page-footer__logo-area-since p {
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
-    padding: 0;
     margin: 0;
     text-align: center;
     padding: 11px 0 0 30px;
@@ -320,14 +322,14 @@
   .page-footer__sections-site h3 {
     padding: 0;
     margin: 0 0 24px 0;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     min-width: 342px;
   }
 
@@ -348,11 +350,11 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
   }
 
@@ -395,14 +397,16 @@
     width: max-content;
   }
 
+  .page-footer__copyright-link,
   .page-footer__copyright-item span {
-    font-family: "PT Mono";
+    text-decoration: none;
+    font-family: $monospace;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
   }
 
@@ -454,7 +458,7 @@
   }
 
   .page-footer__logo-text p {
-    color: #203C42;
+    color: #203c42;
   }
 
   .page-footer__logo-area-since {
@@ -464,15 +468,14 @@
   }
 
   .page-footer__logo-area-since p {
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
-    padding: 0;
     margin: 0 0 28px 0;
     text-align: center;
     padding: 0;
@@ -522,14 +525,14 @@
   .page-footer__address h3,
   .page-footer__sections-site h3 {
     padding: 0;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     min-width: unset;
     margin: 0 0 16px;
     position: relative;
@@ -544,7 +547,6 @@
   .page-footer__sections-site-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
     display: block;
     margin: 0;
   }
@@ -559,11 +561,11 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
   }
 
@@ -613,13 +615,13 @@
   }
 
   .page-footer__copyright-item span {
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: $gray3;
     opacity: 0.5;
   }
 
@@ -636,7 +638,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    right: 0px;
+    right: 0;
     top: -4px;
     background: transparent;
 

@@ -1,35 +1,26 @@
 (function () {
 
   /* Управление открытием-закрытием аккордеонов в футере */
-  const SCREEN_MOBILE_WIDTH = 768;
   const listSite = document.querySelector('.sections-hidden__list-site');
   const listAddress = document.querySelector('.sections-hidden__list-address');
   const buttonAddress = document.querySelector('.sections-hidden__button-address');
   const buttonSite = document.querySelector('.sections-hidden__button-site');
 
   if (listSite && listAddress && buttonAddress && buttonSite) {
-    if (screen.width < SCREEN_MOBILE_WIDTH) {
-      listSite.classList.add('sections-hidden__list--hidden');
+
+    buttonSite.addEventListener('click', () => {
+      buttonSite.classList.toggle('sections-hidden__button-site--closed');
+      listSite.classList.toggle('sections-hidden__list--hidden');
+      buttonAddress.classList.remove('sections-hidden__button-site--closed');
       listAddress.classList.add('sections-hidden__list--hidden');
-      buttonSite.classList.add('sections-hidden__button-site--open');
-      buttonSite.classList.add('sections-hidden__button-site--closed');
-      buttonAddress.classList.add('sections-hidden__button-site--open');
-      buttonAddress.classList.add('sections-hidden__button-site--closed');
+    });
 
-      buttonSite.addEventListener('click', () => {
-        buttonSite.classList.toggle('sections-hidden__button-site--closed');
-        listSite.classList.toggle('sections-hidden__list--hidden');
-        buttonAddress.classList.remove('sections-hidden__button-site--closed');
-        listAddress.classList.add('sections-hidden__list--hidden');
-      });
-
-      buttonAddress.addEventListener('click', () => {
-        buttonAddress.classList.toggle('sections-hidden__button-site--closed');
-        listAddress.classList.toggle('sections-hidden__list--hidden');
-        buttonSite.classList.remove('sections-hidden__button-site--closed');
-        listSite.classList.add('sections-hidden__list--hidden');
-      });
-    }
+    buttonAddress.addEventListener('click', () => {
+      buttonAddress.classList.toggle('sections-hidden__button-site--closed');
+      listAddress.classList.toggle('sections-hidden__list--hidden');
+      buttonSite.classList.remove('sections-hidden__button-site--closed');
+      listSite.classList.add('sections-hidden__list--hidden');
+    });
   }
 
   /*  Появление и скрытие попапа */

@@ -1,81 +1,47 @@
-//____________________________________________________________________________________
 .page-header {
   width: 100%;
   margin: 0 0 112px 0;
   padding: 0 0 40px 0;
-  width: 100%;
   min-height: 838px;
-  background: #1B2D37 url("../img/background-top.png") no-repeat;
+  background: $gray3 url("../img/background-top.png") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 2;
 }
 
-.page-header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  max-width: 1920px;
-  height: 802px;
-  background: url("../img/double-triangle.png") no-repeat;
-  background-position: center;
-  bottom: 76px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -2;
-}
-
 .page-header__wrapper {
-  height: 100%;
-  max-width: 1460px;
+  width: 100%;
+  max-width: 1470px;
   margin: 0 auto;
-  padding: 33px 0 0 0;
-  grid-template-columns: 18% 62.5% 15%;
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  grid-template-areas:
-    "logo contacts buttons"
-    "main main main";
-  column-gap: 40px;
-  row-gap: 18px;
   z-index: 5;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
 
-  @media (min-width: 1023px) and (max-width: 1920px) {
-    max-width: calc(1vw * 1460 / (1920 / 100));
-    column-gap: calc(1vw * 30 / (1920 / 100));
+  @media (min-width: 1023px) and (max-width: 1524px) {
+    max-width: calc(1vw * 1470 / (1524 / 100));
   }
 }
 
-.page-header__wrapper::before {
-  width: 705px;
-  height: 515px;
-  content: "";
-  display: block;
-  position: absolute;
-  background: url("../img/motherboard.png") no-repeat;
-  z-index: 0;
-  bottom: 99px;
-  left: 55%;
-
-  @media (min-resolution: 2dppx) {
-    background: url("../img/motherboard@2x.png") no-repeat;
-    width: 705px;
-    height: 515px;
-    background-size: cover;
-  }
+.page-header__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0 0 0;
+  margin: 0 0 10px 0;
 }
 
 .page-header__logo-area {
   padding: 0;
-  margin: 0 0 0 22px;
-  width: 100%;
-  grid-area: logo;
+  margin: 0 0 0 28px;
+  width: 210px;
 }
 
 .page-header__logo-content {
+  cursor: default;
   display: flex;
   justify-content: space-between;
   width: 202px;
@@ -87,6 +53,12 @@
   height: 52px;
 }
 
+.logo-area__img-text {
+  width: 133px;
+  height: 40px;
+  padding: 11px 0 0 0;
+}
+
 .page-header__logo-text {
   padding: 7px 0 0 0;
 }
@@ -94,52 +66,54 @@
 .page-header__logo-text p {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: bold;
   font-size: 25px;
   line-height: 29px;
-  color: #FFFFFF;
+  color: $white;
   z-index: 5;
 }
 
 .page-header__logo-text p:not(:first-child) {
-  font-family: "Roboto";
+  font-family: $monospace;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: #788891;
 }
 
+.page-header__contacts-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .page-header__contacts-list {
   padding: 18px 0 0 0;
-  margin: 0 0 14px;
+  margin: 0 39px 21px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
   list-style-type: none;
-  grid-area: contacts;
   align-items: center;
 }
 
 .page-header__contacts-item {
-  margin: 0 0 15px 88px;
+  margin: 0 0 26px 22px;
   position: relative;
   align-self: flex-start;
-
-  @media (min-width: 1023px) and (max-width: 1900px) {
-    margin-left: calc(1vw * 88 / (1900 / 100));
-  }
+  min-width: 201px;
 }
 
 .page-header__contacts-item p {
   padding: 0;
   margin: 0;
-  font-family: "PT Mono";
+  font-family: $monospace;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: $white;
 }
 
 .page-header__contacts-content {
@@ -150,19 +124,17 @@
 }
 
 .page-header__contacts-content:hover p {
-  @include hover3
+  @include hover3;
 }
 
 .page-header__button-list {
   list-style-type: none;
-  padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   width: 100;
   justify-content: flex-start;
-  grid-area: buttons;
-  padding: 4px 15px 0 10px;
+  padding: 4px 33px 0 1px;
 }
 
 .page-header__button-item {
@@ -176,11 +148,11 @@
   text-decoration: none;
   width: 180px;
   height: 45px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $white;
   box-sizing: border-box;
   border-radius: 5px;
   background: transparent;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -188,7 +160,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
 
   &:hover {
     @include hover2;
@@ -209,28 +181,11 @@
     padding: 0 0 40px 0;
     width: 100%;
     min-height: 646px;
-    background: #1B2D37 url("../img/tablet/background-top-tablet.png") no-repeat;
+    background: $gray3 url("../img/tablet/background-top-tablet.png") no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 2;
-  }
-
-  .page-header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    max-width: 528px;
-    height: 505px;
-    background: url("../img/tablet/double-triangle-tablet.png") no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: unset;
-    bottom: 222px;
-    left: 57.2%;
-    transform: unset;
-    z-index: -2;
   }
 
   .page-header__wrapper {
@@ -238,44 +193,18 @@
     max-width: unset;
     margin: 0 auto;
     padding: 19px 25px 0;
-    display: grid;
-    grid-template-columns: 202px 1fr;
-    grid-template-rows: min-content;
-    grid-template-areas:
-      "logo contacts"
-      "main main";
-    column-gap: 40px;
-    row-gap: 18px;
     z-index: 5;
     position: relative;
   }
 
-  .page-header__wrapper::before {
-    width: 260px;
-    height: 340px;
-    content: "";
-    display: block;
-    position: absolute;
-    background: url("../img/tablet/motherboard-tablet.png") no-repeat;
-    z-index: 0;
-    left: unset;
-    top: unset;
-    right: -3px;
-    bottom: 212px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/tablet/motherboard-tablet@2x.png") no-repeat;
-      width: 260px;
-      height: 340px;
-      background-size: cover;
-    }
+  .page-header__top {
+    padding: 0;
   }
 
   .page-header__logo-area {
     padding: 0;
     margin: 0 25px 0 0;
-    width: 100%;
-    grid-area: logo;
+    width: unset;
   }
 
   .page-header__logo-content {
@@ -292,16 +221,16 @@
   .page-header__logo-text p {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
-    color: #FFFFFF;
+    color: $white;
     z-index: 5;
   }
 
   .page-header__logo-text p:not(:first-child) {
-    font-family: "Roboto";
+    font-family: $sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -310,19 +239,19 @@
 
   .page-header__contacts-list {
     padding: 6px 25px 0 0;
-    margin: 0 0 0 0;
+    margin: 0 25px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     width: 100%;
     list-style-type: none;
-    grid-area: contacts;
     align-items: center;
   }
 
   .page-header__contacts-item {
-    margin: 7px 0 10px 10px;
+    margin: 4px 0 0 29px;
     position: relative;
+    min-width: min-content;
 
     @media (min-width: 1023px) and (max-width: 1920px) {
       margin-left: calc(1vw * 88 / (1920 / 100));
@@ -344,22 +273,18 @@
     stroke: rgba(0, 178, 255, 0.8);
   }
 
-  .page-header__contacts-content:hover {
-    stroke: rgba(0, 178, 255, 0.8);
-  }
-
   .page-header__button-list {
     display: none;
   }
 
   .page-header__contacts-mail-icon {
-    margin: 3px 20px 0 0;
+    margin: 6px 0 0 0;
     width: 29px;
     height: 19px;
   }
 
   .page-header__contacts-phone-icon {
-    margin: 0 0 0 0;
+    margin: 3px 0 0 0;
     width: 24px;
     height: 24px;
   }
@@ -371,30 +296,11 @@
     padding: 0 0 40px 0;
     width: 100%;
     min-height: 607px;
-    background: #1B2D37 url("../img/mobile/background-top-mobile.png") no-repeat;
+    background: $gray3 url("../img/mobile/background-top-mobile.png") no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 2;
-  }
-
-  .page-header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    max-width: 768px;
-    height: 700px;
-    background: url("../img/mobile/double-triangle-mobile.png") no-repeat;
-    background-position: center;
-    top: unset;
-    bottom: 134px;
-    left: 50%;
-    -webkit-transform: unset;
-    transform: unset;
-    z-index: -2;
-    transform: translateX(-106px);
-    z-index: -2;
   }
 
   .page-header__wrapper {
@@ -402,50 +308,20 @@
     max-width: unset;
     margin: 0 auto;
     padding: 19px 16px 0;
-    display: grid;
-    grid-template-columns: 55px 1fr;
-    grid-template-rows: min-content;
-    grid-template-areas:
-      "logo contacts"
-      "main main";
-    column-gap: 40px;
-    row-gap: 18px;
     z-index: 5;
     position: relative;
   }
 
-  .page-header__wrapper::before {
-    width: 294px;
-    height: 220px;
-    content: "";
-    display: block;
-    position: absolute;
-    background: url("../img/mobile/motherboard-mobile.png") no-repeat;
-    z-index: 0;
-    left: unset;
-    top: unset;
-    right: 1px;
-    bottom: 314px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/mobile/motherboard-mobile@2x.png") no-repeat;
-      width: 294px;
-      height: 220px;
-      background-size: cover;
-    }
-  }
-
   .page-header__logo-area {
     padding: 0;
-    margin: 0 25px 0 0;
-    width: 100%;
-    grid-area: logo;
+    margin: 0;
+    width: 75px;
   }
 
   .page-header__logo-content {
     display: flex;
     justify-content: space-between;
-    width: 202px;
+    width: 70px;
     height: 41px;
   }
 
@@ -454,48 +330,29 @@
     height: 38px;
   }
 
-  .page-header__logo-text {
+  .logo-area__img-text {
     display: none;
   }
 
-  .page-header__logo-text p {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    font-family: "Roboto Condensed";
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
-    color: #FFFFFF;
-    z-index: 5;
-  }
-
-  .page-header__logo-text p:not(:first-child) {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #788891;
+  .page-header__contacts-wrapper {
+    margin: 0 6px 0 0;
   }
 
   .page-header__contacts-list {
-    padding: 0 25px 0 0;
+    padding: 0 0 0 0;
     margin: 0 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     width: 100%;
     list-style-type: none;
-    grid-area: contacts;
     align-items: flex-start;
   }
 
   .page-header__contacts-item {
-    margin: 3px 0 10px 0;
+    margin: 4px 19px 0 0;
     position: relative;
-
-    @media (min-width: 320px) and (max-width: 768px) {
-      margin-left: calc(1vw * 25 / (768 / 100));
-    }
+    min-width: 31px;
   }
 
   .page-header__contacts-item p {
@@ -514,7 +371,7 @@
   }
 
   .page-header__contacts-mail-icon {
-    margin: 3px 10px 0 0;
+    margin: 3px 0 0 0;
     width: 29px;
     height: 19px;
   }

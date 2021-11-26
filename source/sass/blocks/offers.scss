@@ -2,7 +2,7 @@
   margin: 0;
   padding: 90px 0 128px 0;
   width: 100%;
-  background-color: #1B2D37;
+  background-color: $gray3;
 }
 
 .offers__wrapper {
@@ -22,20 +22,22 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 370px);
-  grid-template-rows: 620px;
   gap: 30px;
 
   @media (min-width: 1023px) and (max-width: 1260px) {
     grid-template-columns: repeat(3, calc(1vw * 370 / (1260 / 100)));
-    grid-template-rows: calc(1vw * 620 / (1260 / 100));
   }
 }
 
 .offers__item {
   width: 100%;
-  height: 100%;
+  min-height: 620px;
   padding: 0;
   position: relative;
+
+  @media (min-width: 1023px) and (max-width: 1260px) {
+    min-height: calc(1vw * 620 / (1260 / 100));
+  }
 
   &::after {
     content: "";
@@ -45,7 +47,7 @@
     height: 63px;
     bottom: 0;
     right: 0;
-    background: #00B2FF;
+    background: $blue;
     z-index: 0;
   }
 
@@ -55,8 +57,8 @@
     display: block;
     width: 5px;
     height: 5px;
-    border-top: 1px solid #FFFFFF;
-    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
     transform: rotate(45deg);
     bottom: 28px;
     right: 27px;
@@ -73,11 +75,11 @@
 }
 
 .offers__item p {
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: $white;
   padding: 51px 45px 45px 45px;
   margin: 0;
 }
@@ -126,11 +128,11 @@
 }
 
 .offers__wrapper h2 {
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: $white;
   padding: 0;
   margin: 0 0 50px 0;
 }
@@ -140,7 +142,7 @@
     margin: 0;
     padding: 50px 0 78px;
     width: 100%;
-    background-color: #1B2D37;
+    background-color: $gray3;
   }
 
   .offers__wrapper {
@@ -174,7 +176,7 @@
       height: 63px;
       bottom: 0;
       right: 0;
-      background: #00B2FF;
+      background: $blue;
       z-index: 0;
     }
 
@@ -184,8 +186,8 @@
       display: block;
       width: 5px;
       height: 5px;
-      border-top: 1px solid #FFFFFF;
-      border-right: 1px solid #FFFFFF;
+      border-top: 1px solid $white;
+      border-right: 1px solid $white;
       transform: rotate(45deg);
       bottom: 28px;
       right: 27px;
@@ -194,11 +196,11 @@
   }
 
   .offers__item p {
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: $white;
     padding: 40px 45px 45px 45px;
     margin: 0;
   }
@@ -247,11 +249,11 @@
   }
 
   .offers__wrapper h2 {
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 32px;
     line-height: 140.62%;
-    color: #FFFFFF;
+    color: $white;
     padding: 0 90px 0 0;
     margin: 0 0 50px 0;
   }
@@ -262,11 +264,10 @@
     margin: 0;
     padding: 50px 0 64px;
     width: 100%;
-    background-color: #1B2D37;
+    background-color: $gray3;
   }
 
   .offers__wrapper {
-    max-width: unset;
     margin: 0 auto;
     padding: 0 15px;
     max-width: 550px;
@@ -300,7 +301,7 @@
       height: 63px;
       bottom: 0;
       right: 0;
-      background: #00B2FF;
+      background: $blue;
       z-index: 0;
     }
 
@@ -310,8 +311,8 @@
       display: block;
       width: 5px;
       height: 5px;
-      border-top: 1px solid #FFFFFF;
-      border-right: 1px solid #FFFFFF;
+      border-top: 1px solid $white;
+      border-right: 1px solid $white;
       transform: rotate(45deg);
       bottom: 29px;
       right: 31px;
@@ -320,11 +321,11 @@
   }
 
   .offers__item p {
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: $white;
     padding: 20px 35px;
     margin: 0;
   }
@@ -373,11 +374,11 @@
   }
 
   .offers__wrapper h2 {
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 28px;
     line-height: 140.62%;
-    color: #FFFFFF;
+    color: $white;
     padding: 0 0 0 0;
     margin: 0 0 41px 10px;
     max-width: 500px;

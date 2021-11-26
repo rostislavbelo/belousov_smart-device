@@ -3,27 +3,26 @@
   margin: 0;
   padding: 9px 18px;
   background: rgba(255, 255, 255, 0.1);
- // width: 269px;
   height: 50px;
-  font-family: "PT Mono";
+  font-family: $monospace;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: $white;
   border: 1px solid transparent;
   box-sizing: border-box;
   cursor: pointer;
 
   &::placeholder {
-    font-family: "PT Mono";
+    font-family: $monospace;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $white;
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray;
   }
 }
 
@@ -44,11 +43,11 @@
   margin: 0;
   cursor: pointer;
   width: 35%;
-  font-family: "PT Mono";
+  font-family: $monospace;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: $white;
   opacity: 0.8;
   display: block;
 
@@ -57,7 +56,7 @@
     width: 16px;
     height: 16px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
     box-sizing: border-box;
     left: 38px;
     top: 8px;
@@ -68,8 +67,8 @@
     width: 7px;
     height: 4px;
     border-radius: 0;
-    border-left: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
     top: 12px;
     left: 42px;
     display: none;
@@ -82,7 +81,7 @@
   }
 
   &:hover::before {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray;
   }
 
   &:active {
@@ -90,12 +89,11 @@
   }
 }
 
-.input__checkbox input:checked+label::after {
+.input__checkbox input:checked + label::after {
   display: block;
 }
 
 @media (max-width: $desktop-width) {
-
   .input textarea {
     height: unset;
     width: 100%;
@@ -105,9 +103,7 @@
 
   .input__checkbox label {
     padding: 8px 0 0 75px;
-  }
 
-  .input__checkbox label {
     &::before {
       left: 41px;
       top: 9px;
@@ -132,15 +128,15 @@
 
   .input__checkbox label {
     padding: 8px 0 0 34px;
-  }
 
-  .input__checkbox label::before {
-    left: 0px;
-    top: 9px;
-  }
+    &::before {
+      left: 0;
+      top: 9px;
+    }
 
-  .input__checkbox label::after {
-    top: 13px;
-    left: 4px;
+    &::after {
+      top: 13px;
+      left: 4px;
+    }
   }
 }

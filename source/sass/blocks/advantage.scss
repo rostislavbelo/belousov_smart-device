@@ -61,7 +61,7 @@
   z-index: 6;
   max-width: 570px;
   min-height: 299px;
-  border-color: #EBEBEB #EBEBEB #EBEBEB #00B2FF;
+  border-color: $gray4 $gray4 $gray4 $blue;
   border-style: solid solid solid solid;
   border-width: 2px 2px 2px 3px;
   box-sizing: border-box;
@@ -79,25 +79,25 @@
 }
 
 .advantage__img {
-  stroke: #00B2FF;
+  stroke: $blue;
   margin: 0 0 17px 0;
 }
 
 .advantage__item h3 {
   padding: 0;
   margin: 0 0 14px 0;
-  font-family: "Roboto Condensed";
+  font-family: $sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
-  color: #00B2FF;
+  color: $blue;
   position: relative;
 }
 
 .advantage__item p {
   padding: 0;
   margin: 0;
-  font-family: PT Mono;
+  font-family: $monospace;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -107,12 +107,11 @@
 
 .advantage__item:hover,
 .advantage__item:hover * {
-  background-color: #00B2FF;
-  color: white;
-  fill: white;
-  stroke: white;
-  border-color: #00B2FF;
-  stroke: #ffffff;
+  background-color: $blue;
+  color: $white;
+  fill: $white;
+  stroke: $white;
+  border-color: $blue;
   transition-duration: 0.15s;
 }
 
@@ -166,7 +165,7 @@
     max-width: 570px;
     min-width: 343px;
     min-height: min-content;
-    border-color: #EBEBEB #EBEBEB #EBEBEB #00B2FF;
+    border-color: $gray4 $gray4 $gray4 $blue;
     border-style: solid solid solid solid;
     border-width: 2px 2px 2px 3px;
     box-sizing: border-box;
@@ -189,25 +188,25 @@
   }
 
   .advantage__img {
-    stroke: #00B2FF;
+    stroke: $blue;
     margin: 0 0 4px 0;
   }
 
   .advantage__item h3 {
     padding: 0;
     margin: 0 0 10px 0;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 24px;
     line-height: 34px;
-    color: #00B2FF;
+    color: $blue;
     position: relative;
   }
 
   .advantage__item p {
     padding: 0;
     margin: 0;
-    font-family: PT Mono;
+    font-family: $monospace;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -216,12 +215,11 @@
 
   .advantage__item:hover,
   .advantage__item:hover * {
-    background-color: #00B2FF;
-    color: white;
-    fill: white;
-    stroke: white;
-    border-color: #00B2FF;
-    stroke: #ffffff;
+    background-color: $blue;
+    color: $white;
+    fill: $white;
+    stroke: $white;
+    border-color: $blue;
     transition-duration: 0.15s;
   }
 }
@@ -276,7 +274,7 @@
     max-width: 550px;
     min-width: 290px;
     min-height: min-content;
-    border-color: #EBEBEB #EBEBEB #EBEBEB #00B2FF;
+    border-color: $gray4 $gray4 $gray4 $blue;
     border-style: solid solid solid solid;
     border-width: 2px 2px 2px 3px;
     box-sizing: border-box;
@@ -323,25 +321,25 @@
   }
 
   .advantage__img {
-    stroke: #00B2FF;
+    stroke: $blue;
     margin: 0 0 8px 0;
   }
 
   .advantage__item h3 {
     padding: 0;
     margin: 0 0 10px 0;
-    font-family: "Roboto Condensed";
+    font-family: $sans-serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 140.62%;
-    color: #00B2FF;
+    color: $blue;
     position: relative;
   }
 
   .advantage__item p {
     padding: 0;
     margin: 0;
-    font-family: PT Mono;
+    font-family: $monospace;
     font-weight: normal;
     font-size: 16px;
     line-height: 21.5px;
@@ -350,12 +348,11 @@
 
   .advantage__item:hover,
   .advantage__item:hover * {
-    background-color: #00B2FF;
-    color: white;
-    fill: white;
-    stroke: white;
-    border-color: #00B2FF;
-    stroke: #ffffff;
+    background-color: $blue;
+    color: $white;
+    fill: $white;
+    stroke: $white;
+    border-color: $blue;
     transition-duration: 0.15s;
   }
 }
