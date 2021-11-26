@@ -43,6 +43,7 @@
 .page-footer__logo-img-service {
   width: 147px;
   height: 40px;
+  padding: 10px 0 0 0;
 }
 
 .page-footer__logo-area-since {
@@ -89,7 +90,7 @@
 .page-footer__address h3,
 .page-footer__sections-site h3 {
   padding: 0;
-  margin: 0 0 26px 0;
+  margin: 0 0 24px;
   font-family: $sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -200,7 +201,7 @@
 
 .page-footer__copyright-link,
 .page-footer__copyright-item span {
-  font-family: $sans-serif;
+  font-family: $monospace;
   text-decoration: none;
   font-weight: normal;
   font-size: 13px;
@@ -230,7 +231,7 @@
 
   .page-footer__main-area {
     max-width: unset;
-    margin: 0 0 35px 0;
+    margin: 0 0 37px 0;
     padding: 0 0 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -284,7 +285,7 @@
     opacity: 0.5;
     margin: 0;
     text-align: center;
-    padding: 11px 0 0 30px;
+    padding: 6px 0 0 30px;
   }
 
   .page-footer__social-list {
@@ -309,12 +310,12 @@
     justify-content: space-between;
     margin: 0 0 0 0;
     border-bottom: 1px solid rgba(99, 105, 99, 0.2);
-    padding: 0 0 27px 0;
+    padding: 0 0 24px 0;
   }
 
   .page-footer__sections-site {
     padding: 38px 0 0 0;
-    margin: 0 0 0 27px;
+    margin: 0 0 0 25px;
     grid-area: site;
   }
 
@@ -433,7 +434,7 @@
 
   .page-footer__logo-area {
     padding: 0;
-    margin: 0 auto 26px;
+    margin: 0 5px 28px 0;
     width: unset;
     min-width: unset;
   }
@@ -453,12 +454,8 @@
     height: 52px;
   }
 
-  .page-footer__logo-text {
-    padding: 7px 0 0 16px;
-  }
-
-  .page-footer__logo-text p {
-    color: #203c42;
+  .page-footer__logo-img-service {
+    padding: 10px 0 0 16px;
   }
 
   .page-footer__logo-area-since {

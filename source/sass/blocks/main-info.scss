@@ -137,8 +137,8 @@
     background: url("../img/tablet/double-triangle-tablet.svg") no-repeat;
     background-repeat: no-repeat;
     background-position: center;
-    top: 0;
-    left: 56%;
+    top: -121px;
+    left: 54%;
     transform: unset;
     z-index: -2;
   }
@@ -151,8 +151,9 @@
     position: absolute;
     background: url("../img/tablet/motherboard-tablet.png") no-repeat;
     z-index: 0;
-    right: 22px;
     top: 32px;
+    left: unset;
+    right: 25px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/tablet/motherboard-tablet@2x.png") no-repeat;
@@ -235,7 +236,8 @@
     height: 484px;
     background: url("../img/mobile/double-triangle-mobile.svg") no-repeat;
     background-position: center;
-    left: 47%;
+    left: 42%;
+    top: -117px;
   }
 
   .main-info::before {
