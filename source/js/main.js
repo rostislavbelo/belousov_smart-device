@@ -7,6 +7,8 @@
   const buttonSite = document.querySelector('.sections-hidden__button-site');
 
   if (listSite && listAddress && buttonAddress && buttonSite) {
+    listSite.classList.add('sections-hidden__list--hidden');
+    listAddress.classList.add('sections-hidden__list--hidden');
 
     buttonSite.addEventListener('click', () => {
       buttonSite.classList.toggle('sections-hidden__button-site--closed');
@@ -71,7 +73,7 @@
 
   phoneInputs.forEach((number) => {
     number.addEventListener('click', () => {
-      number.value = '+7 (';
+      number.value = '+7(';
     });
   });
 
@@ -107,15 +109,17 @@
       return;
     }
 
-    if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
-      if (inputNumbersValue[0] === '9') { inputNumbersValue = `7${inputNumbersValue}`; }
-      const firstSymbols = (inputNumbersValue[0] === '8') ? '8' : '+7';
+    const CORRECT_VALUES_NUM = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+    if (CORRECT_VALUES_NUM.indexOf(inputNumbersValue[0]) > -1) {
+      if (inputNumbersValue[0] === CORRECT_VALUES_NUM) { inputNumbersValue = `7${inputNumbersValue}`; }
+      const firstSymbols = '+7(';
       formattedInputValue = input.value = `${firstSymbols} `;
       if (inputNumbersValue.length > 1) {
-        formattedInputValue += `(${inputNumbersValue.substring(1, 4)}`;
+        formattedInputValue += `${inputNumbersValue.substring(1, 4)}`;
       }
       if (inputNumbersValue.length >= 5) {
-        formattedInputValue += `) ${inputNumbersValue.substring(4, 7)}`;
+        formattedInputValue += ` )${inputNumbersValue.substring(4, 7)}`;
       }
       if (inputNumbersValue.length >= 8) {
         formattedInputValue += `-${inputNumbersValue.substring(7, 9)}`;

@@ -1,14 +1,19 @@
 .popup {
   width: 100%;
   z-index: -1;
+
+  @media only screen and (max-height : 762px) {
+    overflow: auto;
+    overflow-x: visible;
+  }
 }
 
 .popup__form {
   width: 490px;
-  min-height: 655px;
+  min-height: 605px;
   margin: 100px auto 250px;
   background: $blue;
-  padding: 35px 41px 36px;
+  padding: 29px 40px 30px;
   box-sizing: border-box;
   position: relative;
   z-index: 100;
@@ -20,7 +25,7 @@
   height: 20px;
   background: transparent;
   border: none;
-  top: 21px;
+  top: 17px;
   right: 25px;
   cursor: pointer;
 
@@ -78,13 +83,14 @@
 
 .popup__form-item {
   width: 100%;
-  margin: 0 0 30px 0;
+  margin: 0 0 29px;
 }
 
 .popup__form-item input {
   display: block;
   width: 100%;
   padding: 0 0 0 23px;
+  height: 52px;
 }
 
 .popup__form-item textarea {
@@ -107,7 +113,7 @@
   border: 1px solid $white;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 0 33px 0;
+  margin: 0 0 35px 0;
 
   &:hover {
     @include hover2;
@@ -115,7 +121,7 @@
 }
 
 .popup__form-checkbox label {
-  padding: 0 0 0 52px;
+  padding: 0 0 0 48px;
   width: 80%;
 
   &::after {
