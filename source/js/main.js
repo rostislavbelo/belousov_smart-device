@@ -9,18 +9,25 @@
   if (listSite && listAddress && buttonAddress && buttonSite) {
     listSite.classList.add('sections-hidden__list--hidden');
     listAddress.classList.add('sections-hidden__list--hidden');
+    buttonSite.classList.remove('sections-hidden__button-site--hidden');
+    buttonAddress.classList.remove('sections-hidden__button-address--hidden');
+
 
     buttonSite.addEventListener('click', () => {
       buttonSite.classList.toggle('sections-hidden__button-site--closed');
       listSite.classList.toggle('sections-hidden__list--hidden');
-      buttonAddress.classList.remove('sections-hidden__button-site--closed');
+
+
+      buttonAddress.classList.add('sections-hidden__button-address--closed');
       listAddress.classList.add('sections-hidden__list--hidden');
     });
 
     buttonAddress.addEventListener('click', () => {
-      buttonAddress.classList.toggle('sections-hidden__button-site--closed');
+      buttonAddress.classList.toggle('sections-hidden__button-address--closed');
       listAddress.classList.toggle('sections-hidden__list--hidden');
-      buttonSite.classList.remove('sections-hidden__button-site--closed');
+
+
+      buttonSite.classList.add('sections-hidden__button-site--closed');
       listSite.classList.add('sections-hidden__list--hidden');
     });
   }
@@ -114,12 +121,12 @@
     if (CORRECT_VALUES_NUM.indexOf(inputNumbersValue[0]) > -1) {
       if (inputNumbersValue[0] === CORRECT_VALUES_NUM) { inputNumbersValue = `7${inputNumbersValue}`; }
       const firstSymbols = '+7(';
-      formattedInputValue = input.value = `${firstSymbols} `;
+      formattedInputValue = input.value = `${firstSymbols}`;
       if (inputNumbersValue.length > 1) {
         formattedInputValue += `${inputNumbersValue.substring(1, 4)}`;
       }
       if (inputNumbersValue.length >= 5) {
-        formattedInputValue += ` )${inputNumbersValue.substring(4, 7)}`;
+        formattedInputValue += `)${inputNumbersValue.substring(4, 7)}`;
       }
       if (inputNumbersValue.length >= 8) {
         formattedInputValue += `-${inputNumbersValue.substring(7, 9)}`;

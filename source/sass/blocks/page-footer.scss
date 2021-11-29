@@ -149,6 +149,11 @@
   order: -1;
 }
 
+.page-footer__address-button,
+.page-footer__sections-site-button {
+  display: none;
+}
+
 .page-footer__address-link,
 .page-footer__sections-site-link {
   text-decoration: none;
@@ -289,11 +294,6 @@
 
 .page-footer__copyright-link:hover {
   @include hover3;
-}
-
-.page-footer__address-button,
-.page-footer__sections-site-button {
-  display: none;
 }
 
 @media (max-width: $desktop-width) {

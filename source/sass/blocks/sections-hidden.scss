@@ -10,6 +10,11 @@
   }
 }
 
+.sections-hidden__button-address--hidden,
+.sections-hidden__button-site--hidden {
+  display: none;
+}
+
 .sections-hidden__button-address--open::before,
 .sections-hidden__button-site--open::before {
   display: block;

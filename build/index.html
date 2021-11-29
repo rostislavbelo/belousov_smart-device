@@ -164,7 +164,7 @@
               <label class="visually-hidden" for="name">Поле ввода имени</label>
             </li>
             <li class="questions-form__item questions-form__phone input__item">
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required="" title="10 цифр">
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required="" title="10 цифр" maxlength="20">
               <label class="visually-hidden" for="phone">Поле ввода номера телефона</label>
             </li>
             <li class="questions-form__item questions-form__question input__item">
@@ -226,6 +226,7 @@
           <h3>Разделы сайта
             <button class="page-footer__sections-site-button
               sections-hidden__button-site
+              sections-hidden__button-site--hidden
               sections-hidden__button-site--open
               sections-hidden__button-site--closed" type="button" aria-label="Открыть-закрыть список разделов сайта">
             </button>
@@ -260,9 +261,9 @@
         <h3>Наш офис
           <button class="page-footer__address-button
             sections-hidden__button-address
-            sections-hidden__button-site
-            sections-hidden__button-site--open
-            sections-hidden__button-site--closed" type="button" aria-label="Открыть-закрыть список аресов и телефонов">
+            sections-hidden__button-address--hidden
+            sections-hidden__button-address--open
+            sections-hidden__button-address--closed" type="button" aria-label="Открыть-закрыть список аресов и телефонов">
           </button>
         </h3>
         <ul class="page-footer__address-list
@@ -313,7 +314,7 @@
           <label class="visually-hidden" for="popup-name">Поле ввода имени</label>
         </li>
         <li class="popup__form-item">
-          <input type="tel" name="phone" id="popup-phone" placeholder="Телефон" required="" title="10 цифр">
+          <input type="tel" name="phone" id="popup-phone" placeholder="Телефон" required="" title="10 цифр" maxlength="20">
           <label class="visually-hidden" for="popup-phone">Поле ввода номера телефона</label>
         </li>
         <li class="popup__form-item input__item">
@@ -328,7 +329,7 @@
       </div>
     </form>
   </div>
-  <script src="2js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
