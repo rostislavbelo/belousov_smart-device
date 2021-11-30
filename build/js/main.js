@@ -5,15 +5,19 @@
   const listAddress = document.querySelector('.sections-hidden__list-address');
   const buttonAddress = document.querySelector('.sections-hidden__button-address');
   const buttonSite = document.querySelector('.sections-hidden__button-site');
+  const clickAreaSite = document.querySelector('.sections-hidden__site h3');
+  const clickAreaAddress = document.querySelector('.sections-hidden__address h3');
 
   if (listSite && listAddress && buttonAddress && buttonSite) {
+    clickAreaSite.classList.add('sections-hidden__site-click');
+    clickAreaAddress.classList.add('sections-hidden__address-click');
     listSite.classList.add('sections-hidden__list--hidden');
     listAddress.classList.add('sections-hidden__list--hidden');
     buttonSite.classList.remove('sections-hidden__button-site--hidden');
     buttonAddress.classList.remove('sections-hidden__button-address--hidden');
 
 
-    buttonSite.addEventListener('click', () => {
+    clickAreaSite.addEventListener('click', () => {
       buttonSite.classList.toggle('sections-hidden__button-site--closed');
       listSite.classList.toggle('sections-hidden__list--hidden');
 
@@ -22,7 +26,7 @@
       listAddress.classList.add('sections-hidden__list--hidden');
     });
 
-    buttonAddress.addEventListener('click', () => {
+    clickAreaAddress.addEventListener('click', () => {
       buttonAddress.classList.toggle('sections-hidden__button-address--closed');
       listAddress.classList.toggle('sections-hidden__list--hidden');
 

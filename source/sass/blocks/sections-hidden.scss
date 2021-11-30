@@ -1,3 +1,10 @@
+.sections-hidden__address-click,
+.sections-hidden__site-click {
+  @media (min-width: 0) and (max-width: 767px) {
+    cursor: pointer;
+  }
+}
+
 .sections-hidden__list--hidden {
   display: none;
 

@@ -27,9 +27,10 @@
   height: 20px;
   background: transparent;
   border: none;
-  top: 17px;
-  right: 25px;
+  top: 18px;
+  right: 19px;
   cursor: pointer;
+  padding: 0 19px 0 0;
 
   &::before {
     @include pseudo;
